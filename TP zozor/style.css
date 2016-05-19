@@ -1,0 +1,317 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url("images/fond_jaune.png");
+}
+
+header{
+    display: flex;
+}
+
+.EnTete{
+    width: 50%;
+}
+.EnTete img{
+    float: left;
+}
+
+.EnTete h1{
+    font-family: BallparkWeiner, Arial, sans-serif;
+    font-weight: normal;
+    margin-left: 70px;
+}
+
+.EnTete h2{
+    font-family: Dayrom, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.EnTete_Nav{
+    display: flex;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.EnTete_Nav li{
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.EnTete_Nav a{
+    text-decoration: none;
+    color: black;
+}
+.EnTete_Nav a:focus{
+    color: #f24537;
+    text-decoration: underline;
+}
+
+.separateur{
+    background-image: url("images/separateur.png");
+    background-repeat: repeat-x;
+}
+
+.Zone_Image{
+    position: relative;
+    height: 290px;
+}
+
+.Zone_Image img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.Zone_Image .Titre_image{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 2px;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+.myButton {
+    position: absolute;
+    bottom: 6px;
+    z-index: 3;
+    right: 10px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+    box-shadow:inset 0px 1px 0px 0px #f5978e;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24537;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537',GradientType=0);
+    background-color:#c62d1f;
+}
+
+
+.myButton img{
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    bottom: 8px;
+    z-index: 4;
+    right: 10px;
+}
+
+section{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+article{
+    width: 80%;
+    margin-right: 20px;
+}
+article img{
+    float: left;
+    vertical-align: middle;
+}
+article h1{
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+article p{
+    clear: both;
+    text-align: justify;
+}
+
+aside{
+    width: 20%;
+    background-color: rgb(112,107,100);
+    border-radius: 8px;
+    position: relative;
+}
+
+aside .bulle{
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    width: 10px;
+    height: 15px;
+}
+
+aside h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+aside .zozor{
+    border: 0.5px solid #4D4E4F;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+aside p{
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+    padding: 0 15px 0 15px;
+}
+
+aside .icones_rs{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 10px 10px;
+}
+
+.ico_top{
+    display: flex;
+    justify-content: center;
+    background-image: url("images/ico_top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    margin-top: -18px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px 10px 40px;
+    font-size: 14px;
+}
+
+footer h1{
+    text-transform: uppercase;
+    font-family: Dayrom, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+footer .footer2{
+    width: 300px;
+}
+
+footer .Photos{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .Photos img{
+    border: 0.5px solid #4D4E4F;
+}
+
+footer .footer3 .menu{
+    display: flex;
+    padding-top: 0px;
+}
+
+footer .footer3 .menu li{
+    list-style-type: none; /* on annule la puce par défaut */
+    background-image: url("images/ico_liensexterne.png"); /* on affiche l'image souhaitée */
+    background-repeat: no-repeat; /* on annule la répétition par défaut */
+    background-position: left center; /* on positionne où l'on veut */
+    padding-left: 10px; /* pour éviter la superposition du contenu */
+}
+
+footer .footer3 .menu ul{
+    margin: 0px;
+    padding: 0 15px 0 0px;
+}
+
+footer .footer3 .menu li a{
+    color: #9C2736;
+}
+
+/********************************/
+/**** CSS responsive design ****/
+/********************************/
+
+/* ce CSS s'applique dès que la largeur de l'écran est < 1280 px */
+@media all and (max-width: 1024px)   
+{
+    header{
+       width: auto;
+    }
+
+    article, aside, footer, section{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .EnTete_Nav{
+        flex-direction: column;   
+        width: auto;
+        margin: auto;
+    }
+
+    .EnTete_Nav li{
+        display: block;
+    }
+
+    .Zone_Image, .bulle{
+        display: none;
+    }
+
+    .zozor{
+        width: 50%;
+        height: 50%;
+    }
+
+    
+    footer h1{
+        font-weight: bold;
+    }
+}
